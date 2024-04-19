@@ -14,9 +14,11 @@
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
     <script src="player.js"></script>
-    <button style="border:none; cursor: pointer">
-      <i class="fa fa-play" style="color:white;" aria-hidden="true"></i>
-    </button>
+    <div class="button-wrapper" style="background-color: white;">
+      <button style="border:none; cursor: pointer; background-color: transparent">
+        <i class="fa fa-play" style="color:white;" aria-hidden="true"></i>
+      </button>
+    </div>
   </div>
   <script type="text/javascript">
     createPlayer({elementId: 'player'});
