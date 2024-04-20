@@ -17,6 +17,8 @@
     }
     .button-wrapper {
       background-color: black;
+      display: flex;
+      flex-direction: row;
     }
     button {
       border: none;
@@ -29,6 +31,10 @@
       color: white;
       height: 50%;
       width: 10px;
+      flex-grow: 1;
+    }
+    .empty {
+      flex-grow: 100;
     }
   </style>
 </head>
@@ -48,6 +54,10 @@
         </button>
         <button class="js-volume-button" hidden>
           <i class="fa fa-volume-up" aria-hidden="true"></i>
+        </button>
+        <div class="empty"></div>
+        <button class="js-fullscreen-button">
+          <i class="fa fa-expand" aria-hidden="true"></i>
         </button>
       </div>
     </div>
