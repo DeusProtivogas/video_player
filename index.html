@@ -5,9 +5,14 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <style type="text/css">
+    .player-wrapper {
+    }
     #player {
       width: 800px;
       height: 600px;
+      box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.5);
+    }
+    .player {
     }
     .js-video-container {
       width: 100%;
@@ -39,8 +44,8 @@
   </style>
 </head>
 <body>
-  <div style="background:black">
-    <div id="player">
+  <div class="player-wrapper">
+    <div id="player" class="player">
       <div class="js-video-container"></div>
       <!-- Here can be placed player controls: play and volume buttons -->
       <div class="button-wrapper">
