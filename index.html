@@ -35,7 +35,7 @@
       font-size: 120%;
       margin: 11px;
       margin-left: 2px;
-      margin-right: 16px;
+      margin-right: 17px;
       color: white;
       height: 50%;
       width: 10px;
@@ -46,6 +46,8 @@
     .duration-numbers {
       color: white;
       font-family: 'Roboto', regular;
+      margin-right: 3px;
+      margin-left: 1px;
     }
     .duration-block {
       font-size: 103%;
@@ -53,10 +55,35 @@
       flex-grow: 100;
       display: flex;
       flex-direction: row;
+      margin-bottom: 13px;
     }
     .duration-line {
       flex-grow: 100;
+      display: flex;
+      flex-direction: row;
+      background-color: black;
+      height: 90%;
     }
+    .duration-slider {
+      background-color: red;
+      height: 5px;
+      margin-top: 8px;
+      margin-left: 5px;
+      border-radius: 30px;
+    }
+    .dot {
+      margin-top: 3px;
+      margin-left: -11px;
+      height: 8px;
+      width: 8px;
+      background-color: red;
+      border-radius: 50%;
+      border-width: 3px;
+      border-style: solid;
+      border-color: white;
+      display: inline-block;
+    }
+
   </style>
 </head>
 <body>
@@ -77,18 +104,17 @@
         </button>
         <div class="duration-block">
           <div class="duration-numbers js-current-time"></div>
-          <div class="duration-line js-progress" style="background-color: black;">
-            <div class="js-progress-slider" style="color: white; background-color: black;"> - </div>
+          <div class="duration-line js-progress">
+            <div class="duration-slider js-progress-slider"></div>
+    <span class="dot"></span>
           </div>
           <div class="duration-numbers js-duration"></div>
         </div>
-<!--        <div class="empty"></div>-->
         <button class="player-button js-fullscreen-button">
           <i class="fa fa-expand" aria-hidden="true"></i>
         </button>
       </div>
     </div>
-    <p style="font-family: 'Roboto', regular;">Текст в шрифте Comic Neue</p>
     <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
     <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>
     <script src="player.js"></script>
