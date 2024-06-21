@@ -63,6 +63,7 @@
       flex-direction: row;
       background-color: black;
       height: 90%;
+      margin-left: 8px;
     }
     .duration-slider {
       background-color: red;
@@ -72,6 +73,10 @@
       border-radius: 30px;
     }
     .dot {
+      opacity: 0;
+      transition-property: opacity;
+      transition-duration: .3s;
+
       margin-top: 3px;
       margin-left: -11px;
       height: 8px;
@@ -82,6 +87,9 @@
       border-style: solid;
       border-color: white;
       display: inline-block;
+    }
+    .duration-line:hover .dot {
+      opacity: 1;
     }
 
   </style>
