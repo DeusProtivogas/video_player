@@ -54,6 +54,7 @@
   background-color: black;
   height: 90%;
   margin-left: 8px;
+  cursor: pointer;
 }
 .duration-slider {
   background-color: red;
